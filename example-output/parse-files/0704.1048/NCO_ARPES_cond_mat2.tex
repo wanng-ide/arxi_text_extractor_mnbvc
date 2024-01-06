@@ -1,0 +1,607 @@
+%<div class="moz-text-flowed" style="font-family: -moz-fixed">%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is a template file for The European Physical Journal
+%
+
+
+\documentclass[preprint,showpacs,preprintnumbers,amsmath,amssymb,twoside,aps]{revtex4}
+%\documentclass[preprint,showpacs,preprintnumbers,amsmath,amssymb]{revtex4}
+
+% Some other (several out of many) possibilities
+%\documentclass[preprint,aps]{revtex4}
+%\documentclass[preprint,aps,draft]{revtex4}
+%\documentclass[prb]{revtex4}% Physical Review B
+
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{color}
+
+%\newcommand{\SAMO}{$\mbox{A}_{1-x} \mbox{B}_{x} \mbox{MnO}_{3}$ \/}
+
+\sloppy
+
+\begin{document}
+\newcommand{\NCOx}{Na$_{\mbox{\scriptsize x}}$CoO$_{\mbox{\scriptsize 2}}$}
+\newcommand{\NCO}{Na$_{\mbox{\scriptsize 0.73}}$CoO$_{\mbox{\scriptsize 2}}$}
+%
+\newcommand{\NCOc}{Na$_{\mbox{\scriptsize 0.75}}$CoO$_{\mbox{\scriptsize 2}}$}
+\newcommand{\tco}{T$_{\mbox{\scriptsize CO}}$}
+\newcommand{\tso}{T$_{\mbox{\scriptsize SO}}$}
+\newcommand{\tc}{T$_{\mbox{\scriptsize C}}$}
+\newcommand{\tilt}{I$_{\mbox{\scriptsize 300}}$}
+\newcommand{\GM}{$\Gamma$M}
+\newcommand{\GK}{$\Gamma$K}
+\newcommand{\LPSMO}{(La$_{\mbox{\scriptsize 1-y}}$Pr$_{\mbox{\scriptsize y}}$)$_{\mbox{\scriptsize 7/8}}$Sr$_{\mbox{\scriptsize 1/8}}$MnO$_{\mbox{\scriptsize 3}}$}
+%
+\newcommand{\quadru}{ $(1\pm 0.25,\pm 0.25,0)$}
+\newcommand{\doub}{ $(1\pm 0.5,\pm 0.5,0)$}
+
+%
+
+
+%\begin{document}
+
+
+\title{Anisotropic quasiparticle renormalization in Na$_{0.73}$CoO$_2$:
+ role of inter-orbital interactions and magnetic correlations}
+
+\author{J. Geck$^{1,2,}$\footnote{Email: geck@physics.ubc.ca}}
+\author{S.V. Borisenko$^1$}
+\author{H. Berger$^3$}
+\author{H. Eschrig$^1$}
+\author{J. Fink$^1$}
+%\author{R. Follath$^4$}
+\author{M. Knupfer$^1$}
+\author{K. Koepernik$^1$}
+\author{A. Koitzsch$^1$}
+\author{A.A. Kordyuk$^{1,4}$}
+\author{V.B. Zabolotnyy$^1$}
+\author{B. B\"uchner$^1$}
+
+% \thanks is optional - remove next line if not needed
+%\thanks{\emph{Present address:} Insert the address here if needed}
+%}                     % Do not remove
+%
+%\offprints{}          % Insert a name or remove this line
+%
+
+
+\affiliation{$^1$IFW Dresden, P.O. Box 270116,D-01171 Dresden, Germany}
+
+\affiliation{$^2$Department of Physics and Astronomy, University of British Columbia, Vancouver, BC, V6T 1Z1, Canada}
+
+\affiliation{$^3$Institut de physique de la mati\'{e}re complex, EPF Lausannne, 1015 Lausanne, Switzerland}
+
+%\affiliation{$^3$BESSY GmbH, Albert-Einstein-Strasse 15, 12489 Berlin, Germany}
+
+\affiliation{$^4$Institute of Metal Physics of the National Academy of Sciences of Ukraine, 03142 Kyiv, Ukraine}
+
+
+%
+%
+\date{Received: \today}
+% / Revised version: date}
+% The correct dates will be entered by Springer
+%
+\begin{abstract}
+We report an angular resolved photoemission study of \NCOx \/ with x$\simeq$0.73 where it is found that the renormalization of the quasiparticle
+dispersion changes dramatically upon a rotation from \GM \/ to \GK. The comparison of the experimental data to the calculated band structure reveals
+that the  quasiparticle renormalization is most pronounced along the \GK-direction, while it is significantly weaker along the \GM-direction. We
+discuss the observed anisotropy in terms of multiorbital effects and point out the relevance of magnetic correlations for the band structure of \NCOx
+\/ with $x\simeq0.75$.
+\end{abstract}
+
+%
+\pacs{71.27.+a, 71.18.+y,74.25.Jb,74.70.-b}
+                              %display desired
+\maketitle
+
+
+%Sect. 1: Introduction
+
+The unconventional behavior of correlated electrons in materials comprised of square lattices has attracted a vast amount of attention
+\cite{OrensteinScience00,TokuraScience00}. However, besides strong electronic correlations, the topology of the underlying lattice structure itself
+constitutes another important ingredient that can produce exotic electronic ground states.
+
+The CoO$_2$-layers in the \NCOx\/ materials, which are built up from edge-sharing CoO$_6$ octahedra, constitute a realization of a correlated
+electron system based on a triangular lattice. More specifically, these compounds possess a layered hexagonal structure, where strongly covalent
+CoO$_2$- and ionic Na-layers ($ab$-planes) alternate along the perpendicular $c$-axis \cite{HuangPRB04a}. Upon changing the Na content $x$, these
+materials can be doped with electrons and, in addition, water molecules can be intercalated. Both changing $x$ and water intercalation drastically
+alter the electronic properties of \NCOx, leading most notably to the emergence of superconductivity upon hydration \cite{FooPRL04,TakadaNature03}.
+%
+We will focus on the non-hydrated compounds with $x\simeq0.7$, where an anomalous metallic state with an extremely large and field dependent
+thermoelectric power as well as a giant field dependent scattering rate was observed \cite{WangNature03,LiPRL04}. There is also evidence for the
+seemingly paradoxical coexistence of electron itinerancy and localized magnetic moments, as well as for unusual charge order CDW phenomena in these
+macroscopically metallic compounds \cite{GavilanoPRB04,BernhardPRL04,NingPRL04}.
+
+
+%
+%The electronic properties described above can hardly be reconciled by any conventional band theory and, indeed, there is evidence for unusual spin,
+%charge and orbital correlations in \NCOx \/ \cite{KhaliullinPRL04,DaghoferPreprint06}.
+The unconventional electronic properties described above strongly motivate the study of the electronic structure of \NCOx\/ by means of angular
+resolved photoemission spectroscopy (ARPES), which provides direct and unique experimental access to single-particle excitations and, thus, to the
+many-body effects in these materials. Previous ARPES studies on \NCOx\/ \cite{VallaNature02,YangPRL04,HasanPRL04,YangPRL05,QianPRL06,QianPRL06b}
+showed pronounced deviations from the electronic structure predicted by LDA
+calculations \cite{SinghPRB00}. %Most notably the hole-pockets along the \GK-direction predicted by LDA for $x<0.6$ were found to sink below the Fermi
+%energy $E_F$ \cite{YangPRL05}.
+In addition, a strongly renormalized heavy QP band, displaying a  kink feature was reported \cite{YangPRL04,HasanPRL04,YangPRL05}.
+
+
+
+In this ARPES study we focus on the momentum ($k$) dependent renormalization effects in \NCO , which is
+essential to unravel the relevant couplings that govern the low energy physics. % and, hence, the electronic properties of this material.
+%
+%Sect. 2: Experiment
+ARPES experiments were carried out using a lab-based system equipped with a SCIENTA SES 200 analyser and a Gammadata He discharge lamp at an
+excitation energy $h \nu = 21.2$\,eV (energy resolution 30\,meV, angular resolution 0.3$^{\circ}$).
+%In addition, measurements at different excitation energies between 50\,eV and 90\,eV were carried out
+%using radiation from the U125/1-PGM beamline at the BESSY Synchrotron Radiation Facility and a SCIENTA SES 100 analyzer.
+The high-quality \NCO\/ single crystals examined in this study were grown by the sodium chloride flux methods as described in Ref.\,\cite{Iljev04}.
+
+% Sect. 3: Lab-Results
+
+% Sect. 3.1: FL-Crossing
+
+A typical Fermi level ($E_F$) crossing observed at T=25\,K is shown in Fig.\,1, where the image on the left hand side shows the photoelectron
+intensity as a function of momentum $k$ and binding energy $E_B$. A single and well defined QP band, which crosses the Fermi energy at $E_B=0$\,eV
+can be observed. On the right hand side of Fig.\,1 an energy distribution curve (EDC) and a momentum distribution curve (MDC)
+are shown. % demonstrating the very good quality of the obtained data.
+%
+%Sect. 3.2: Map data
+By mapping the $E_F$ crossings over a large area of $k$-space, a cut through the Fermi surface (FS) of \NCO\/ parallel to the CoO$_2$ planes was
+measured. The data allows for a precise calibration of the $k$-scale, because dispersions from the first into the second Brillouin zone were
+captured. In Figs.\,2\,(a),(b) the $k$-dependent photoelectron intensity for two fixed binding energies of $E_B=0$\,eV and 0.132\,eV are shown.
+%
+Focussing on the cut at $E_B=0$\,eV in Fig.\,2\,(a), a large hole-pocket centered around the Brillouin zone center $\Gamma$ is observed. The FS
+displays a clear hexagonal topology. The intensity variations along the FS, leading to a seemingly lower symmetry, are caused by matrix element
+effects.
+%
+The size of the observed FS agrees well with the doping level, provided that only one of the two $a_{1g}$-bands (cf. Fig.\,2\,(c)) crosses $E_F$.
+This agrees with the data shown in Fig.\,1, where a single QP-band crosses $E_F$ .
+
+%Note also that the sharp features at $E_F$ are indicative of a two-dimensional (2D) system, because a strong broadening would be expected for a
+%three-dimensional (3D) system (see discussion below) \cite{StarnbergPRB93}.
+%
+
+In accordance with previous studies, the hole-pockets along \GK\/ are not observed for $E_B=0$\,eV.  It can be seen in Fig.\,2\,(b) that the
+corresponding $e_g'$-band (cf. Fig.\,2\,(c)) lies well below $E_F$, as reported earlier \cite{YangPRL05}.
+%
+This can also be observed in Fig.\,2\,(c), where the measured band structure along \GK \/ and \GM \/ is compared to the band structure obtained by
+LDA \cite{SinghPRB00}. There is a fair agreement of the ARPES data and LDA at higher binding energies above 1.5\,eV. However, close to $E_F$
+deviations occur which are particularly pronounced along \GK.
+%
+
+
+In Fig.\,3 two cuts of the data set shown in Fig.\,2 along the \GK- (left) and \GM-direction (right) are shown.
+%
+Focussing on the cut along  \GK , two prominent features can be observed. First, there is a band crossing $E_F$ that forms the FS. Second, there is
+another band at higher binding energies, which can be identified as the $e_g'$-band. The data indicates that the top of the $e_g'$-band is at about
+85\,meV.
+
+By tracking the maximum of the MDCs for different $E_B$, the QP-dispersion ($E(k)$) indicated by black symbols is obtained. Close to $E_F$ the
+dispersion can be well described by a linear behavior, yielding the Fermi velocity  $v_F=(0.3\pm0.05)$\,eV\,\AA \/ along \GK .
+%
+However, at slightly higher $E_B$, the measured dispersion is bent and thus deviates from the linear behavior close to $E_F$.
+%
+We define the energy where this deviation becomes significant as $E_d$, resulting in $E_d=(26\pm 8)$\,meV for the \GK-direction. The second bend in
+the dispersion around 80\,meV is related to the crossing of the two bands \cite{QianPRL06b}.
+%Turning to the cut along the \GM-direction, a kink of the QP-band can also be observed.
+Applying the same analysis to the cut along \GM\/ leads to $v_F=(0.6\pm0.08)$\,eV\,\AA\/ and $E_d=(66 \pm 5)$\,meV. Clearly, both $v_F$ and $E_d$
+depend on the direction in $k$-space.
+
+The observed bending of the dispersion that sets in around $E_d$ could be due to a coupling of the QP to bosonic excitations. In fact, consistent
+with this interpretation, we observe an enhanced increase of the scattering rate around $E_d$.
+%
+It has to be noted, however, that the feature in the dispersion observed here is not as well defined as the kink in the cuprates, for example. This
+means that  the values of $E_d$ cannot be identified straightforwardly with a specific mode energy and, moreover, a coupling to several different
+bosonic excitations is possible.
+
+
+%Sect. 3.4.: Anisotropic Renormalization:
+In the following we will focus on $v_F$, which is a well defined quantity: Cuts for different $\psi$-values (cf. Fig.\,1\,(b)) were systematically
+analyzed in the same way as described above. The obtained variation of $v_F$ as determined from the ARPES data is shown in Fig.\,4\,(a). Upon
+rotating the direction of the cut from \GM\/ to \GK\/, $v_F$ decreases by about a factor of 2.
+%and the values for $v_F$ as well as $E_k$ are almost perfectly symmetric with respect to the \GK-direction at $\psi=210^{\circ}$.
+Using the function $k_F(\psi)$ that was determined from the data in Fig.\,2\,(a) together with the obtained values of $v_F$, the variation of the
+effective mass $m^*$ with $\psi$ can be calculated. The result is given in Fig.\,4\,(c). Remarkably, the QP along the \GK\/ direction is about twice
+as heavy as the QP along \GM. This pronounced anisotropy of $m^*$ is expected to have a strong impact on the in-plane electronic properties of \NCO.
+
+
+
+
+To determine the renormalization effects in \NCO, we use the LDA band structure as a reference and compare the ARPES Fermi velocities ($v_F^{PES}$)
+to the corresponding LDA values ($v_F^{LDA}$). As it can be observed in Figs.\,4\,(a),(b), these two quantities show exactly the opposite behavior:
+$v_F^{PES}$ decreases and $v_F^{LDA}$ increases upon rotation from \GM\/ to \GK.
+%
+In order to check whether the deviation between ARPES and LDA is related to a lattice distortion at the surface, LDA calculations were performed for
+structures where the distance between the oxygen and the cobalt layers, i.e. the Co--O--Co bond angle, was changed. In agreement with previous
+calculations, we observe that the top of the $e_g'$ band is shifted to higher binding energies upon increasing the Co--O--Co bond angle. At the same
+time the anisotropy of $v_F^{\rm LDA}$ is slightly reduced, but unchanged qualitatively. This strongly suggests  that the measured anisotropy of
+$v_F^{PES}$ is not caused by a lattice distortion at the surface.
+
+
+ The comparison of LDA and ARPES therefore shows that the deviation of the LDA
+bandstructure from the measured QP-dispersion increases dramatically close to the \GK-direction (cf. inset of Fig.\,3). In the following we will
+refer to this deviation as QP-renormalization (QPR).
+%
+This QPR can be characterized using a constant $\kappa$ defined by $(1+\kappa)\,v_F^{PES}=v_F^{LDA}$. The $\psi$- or, in other words, k-dependence of
+$\kappa$ is shown in Fig.\,4\,(d), revealing the strong anisotropy of the QPR in \NCO. We note that, although the photoelectron intensity in
+Fig.\,2\,(a) at $k_F$ is also influenced by matrix element effects, it is always significantly lower in the \GK- than in the \GM-direction, in
+agreement with enhanced renormalization effects along \GK.
+
+
+
+
+We find $\partial_k E^{PES}\simeq \partial_k E^{LDA}/2$ along \GK \/ in the whole energy range up to $E_B=85$\,meV (inset of Fig.\,3).
+%even in the energy range well below $E_d\simeq
+%26$\,meV (cf. inset of Fig.\,3). %i.e. the QP-dispersion is not affected by the coupling to a single bosonic mode alone.
+%
+At the same time it is remarkable that the QPR gets stronger the closer the so-called $e_g'$-band gets to the Fermi level (c.f. Fig.2\,(b)). This
+points to an effect related to coupling between the $a_{1g}$- and the $e_g'$-bands. In fact, a strong interaction between these bands is manifested
+by a large hybridization gap at higher binding energies  and the polarization dependence along \GK\/ found in a recent ARPES study \cite{QianPRL06b}.
+%
+Hence, the $k$-dependent QPR at $E_F$ is most likely caused by multiorbital effects, i.e. interactions between the states of $e_g'$ and $a_{1g}$
+symmetry. In this case, the QP-states along \GM\/ and \GK\/ display different properties: Along \GM\/ the QP-states have largely $a_{1g}$ symmetry,
+while they display pronounced multiorbital properties along \GK . This is of crucial importance for the many-body effects in these materials, since
+the coupling of the QP to bosonic excitations depends critically on the symmetry of the QP-states \cite{DevereauxPRL04}.
+%
+%Since the coupling of the QP to bosonic excitations depends critically on the symmetry of the QP-states \cite{DevereauxPRL04}, this might be related
+%to the $k$-dependence of $E_d$ described above.
+To conclude so far, the observed anisotropies clearly indicate that multiorbital effects play an important role for the QP-dynamics at $E_F$.
+
+
+
+%%% DFT cannot describe vF(psi)
+
+Furthermore, our DFT studies --details will be provided in a forthcoming publication-- show that %, besides the multi-orbital effects,
+magnetic correlations play an important role for the QP-dynamics as well: According to non-magnetic LDA calculations the band structure of \NCOc\/
+displays a strong 3D character. In agreement with a previous DFT study \cite{JohannesEPL04}, we obtain a sizeable $k_z$-dispersion parallel to the
+$c$-axis that leads to additional caps of the FS as shown in Figs.\,5\,(a),(b). Such a strong 3D character is not in agreement with ARPES data: (i)
+in general, the QP peaks at $E_F$ are expected to be considerably broadened in a 3D system, in particular because the short life time of the final
+states becomes important \cite{StarnbergPRB93}. This is not the case (Fig.\,1). (ii) ARPES measurements at various excitation energies do not show
+any evidence for a strong dispersion along $c$ \cite{QianPRL06b}.
+
+However, magnetic LSDA calculations yield an AFM ground state, where ferromagnetic $ab$-planes are coupled antiferromagnetically along $c$. This
+agrees well with neutron data \cite{HelmePRL05}. In the AFM state, the $k_z$-dispersion is strongly reduced, which removes the aforementioned FS-caps
+and yields the FS shown in Fig.\,5\,(c). In other words, according to LSDA, 3D AFM correlations
+%at low temperatures
+render the electronic structure of \NCOc\/ effectively 2D. The top of the $e_g'$-band at $E_B\simeq 70$\,meV as well as the topology and size of the
+FS obtained in LSDA are in good agreement with the ARPES data as demonstrated in 5\,(d). The above results together with the neutron data indicate
+that AFM correlations have a strong influence on the electronic structure of \NCOx\/ with $x\simeq0.75$.
+
+In conclusion, we have shown that the QPR in \NCO \/ is strongly anisotropic and provided clear evidence for the relevance of multiorbital effects
+for the QP dynamics in this material. In addition, detailed DFT studies highlight the impact of magnetic correlations on the QP-states near $E_F$,
+which is expected to be directly related to the unusual temperature as well as the field dependencies of the thermopower and the QP scattering rates
+\cite{WangNature03,LiPRL04,HasanPRL04}.  Hence, both the interactions between the $a_{1g}$ and $e_g'$ states as well as magnetic correlations have to
+be taken into account in order to obtain a realistic description of these materials.
+
+
+
+
+{\bf Acknowledgements:} We thank Dr. Bussy (Univ. of Lausanne) for the micro probe analysis and  I. Elfimov, K.M. Shen, D.G. Hawthorn and G.A.
+Sawatzky for helpful discussions. This work was supported by the Swiss NCCR research pool MaNEP of the Swiss NSF, the DFG (FOR 538 research unit,
+Grant 51195121) and the BMBF (Grant 05KS4OD2/8). J.G. gratefully acknowledges the support by the DFG.
+
+\section*{\large Figure captions}
+
+{\bf FIG.\,1:} Left: Typical Fermi level crossing observed along a cut close to \GM\/ ($\psi=173^{\circ}$, cf. Fig.\,2\,(b))
+% h \nu=21.2$\,eV).
+Right: Corresponding energy distribution curve (EDC) and momentum distribution curve (MDC) at $k=k_F$ and $E_B=0$\,eV, respectively.
+%\label{fig:1}
+
+
+{\bf FIG.\,2:} ARPES data for \NCO\/ (excitation energy $h \nu=21.2$\,eV). (a), (b): Momentum distribution maps of the photoelectron intensity
+integrated over a small energy interval ($E_B\pm 3$\,meV) at $E_B=0$\,eV and 0.132\,eV measured at T=25\,K. The measured $k$-region is indicated by
+the black dotted line in (a). The other regions in $k$-space have be obtained by rotating this data set by 120$^{\circ}$ and 240$^{\circ}$. The
+broken white lines show the two-dimensional Brillouin zone. High-symmetry points $\Gamma$, K, and M are indicated in (a) and the definition of $\psi$
+is given in (b). A fit to $k_F=k_F(\psi)$ is shown as a solid black line.  (c): Comparison of the measured band structure and the LDA calculation by
+Singh (black lines) \cite{SinghPRB00}. The crystal field split $e_g'$- and $a_{1g}$-manifolds are indicated.\label{fig:2}
+
+
+%
+{\bf FIG.\,3:} Cuts through the map data shown in Fig.\,2\,(a) and (b). The data is normalized to binding energies above 0.25\,eV. Black symbols:
+QP-dispersion determined by fitting MDCs at different $E_B$. Broken lines indicate the fitted linear dispersions (see text).  The inset shows the
+ARPES- (symbols) and LDA- (lines) dispersions as a function of $k-k_F(\psi)$. LDA for $x=0.73$ in the rigid band approximation (cf. Fig.\,4).
+\label{fig:3}
+
+{\bf FIG.\,4:} (a),(b): $v_F^{PES}$ and $v_F^{LDA}$ as a function of $\psi$. The experimental $v_F^{PES}$ values at a given value of $\psi$ were
+obtained by averaging over two equivalent cuts (e.g. $\psi=150^{\circ}$, $210^{\circ}$).  The LDA calculations were performed in the rigid band
+approximation for the low temperature lattice structure using Wien2K. The same behavior was also found by LDA/LSDA calculations in the virtual
+crystal approximation (cf. Fig.\,5). (c): Effective mass of the QP. (a)-(c): $h \nu=21.2$\,eV. Solid curves are fits to a sinus-function intended to
+serve as guides to the eye. (d): $\kappa=v_F^{LDA}/v_F^{PES}-1$ characterizing the QPR. \label{fig:4}
+
+{\bf FIG.\,5:} FS obtained for $x=0.75$ by LDA in the virtual crystal approximation (VCA), revealing a three-dimensional band structure. (c): FS for
+the AFM ground state obtained by LSDA in the VCA where the band structure retains its pronounced two-dimensionality. The color scale in (a)-(c)
+indicates $v_F$. (d) Comparison of the measured and LSDA FS. The DFT calculations have been performed using the FPLO code
+\cite{EschrigPRB99}.\label{fig:5}
+%
+
+
+
+%\bibliographystyle{apsrev}
+%\bibliography{LSMO125,nick,RXS,cuprates,NCO,NdSrMnO,lit}
+
+\begin{thebibliography}{23}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi \expandafter\ifx\csname bibnamefont\endcsname\relax
+  \def\bibnamefont#1{#1}\fi
+\expandafter\ifx\csname bibfnamefont\endcsname\relax
+  \def\bibfnamefont#1{#1}\fi
+\expandafter\ifx\csname citenamefont\endcsname\relax
+  \def\citenamefont#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi \providecommand{\bibinfo}[2]{#2} \providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{\citenamefont{Orenstein and Millis}(2000)}]{OrensteinScience00}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Orenstein}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Millis}},
+  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{288}},
+  \bibinfo{pages}{468} (\bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{Tokura and Nagaosa}(2000)}]{TokuraScience00}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Tokura}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Nagaosa}},
+  \bibinfo{journal}{Science} \textbf{\bibinfo{volume}{288}},
+  \bibinfo{pages}{462} (\bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{Huang et~al.}(2004)\citenamefont{Huang, Foo, Pascal,
+  Lynn, Toby, He, Zandbergen, and Cava}}]{HuangPRB04a}
+\bibinfo{author}{\bibfnamefont{Q.}~\bibnamefont{Huang}},
+  \bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Foo}},
+  \bibinfo{author}{\bibfnamefont{R.~A.} \bibnamefont{Pascal}},
+  \bibinfo{author}{\bibfnamefont{J.~W.} \bibnamefont{Lynn}},
+  \bibinfo{author}{\bibfnamefont{B.~H.} \bibnamefont{Toby}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{He}},
+  \bibinfo{author}{\bibfnamefont{H.~W.} \bibnamefont{Zandbergen}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Cava}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{70}},
+  \bibinfo{pages}{184110} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Foo et~al.}(2004)\citenamefont{Foo, Wang, Watauchi,
+  Zandbergen, He, Cava, and Ong}}]{FooPRL04}
+\bibinfo{author}{\bibfnamefont{M.~L.} \bibnamefont{Foo}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Wang}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Watauchi}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Zandbergen}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{He}},
+  \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Cava}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{N.~P.} \bibnamefont{Ong}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{92}},
+  \bibinfo{pages}{247001} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Takada et~al.}(2003)\citenamefont{Takada, Sakurai,
+  Takayama-Muromachi, Izumi, Dilanian, and Sasaki}}]{TakadaNature03}
+\bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Takada}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Sakurai}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Takayama-Muromachi}},
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Izumi}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Dilanian}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Sasaki}},
+  \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{422}}, \bibinfo{pages}{53}
+  (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Wang et~al.}(2003)\citenamefont{Wang, Rogado, Cava, and
+  Ong}}]{WangNature03}
+\bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Wang}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Rogado}},
+  \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Cava}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Ong}},
+  \bibinfo{journal}{Nature} \textbf{\bibinfo{volume}{423}},
+  \bibinfo{pages}{425} (\bibinfo{year}{2003}).
+
+\bibitem[{\citenamefont{Li et~al.}(2004)\citenamefont{Li, Taillefer, Hawthorn,
+  Tanatar, Paglione, Sutherland, Hill, Wang, and Chen}}]{LiPRL04}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Li}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Taillefer}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Hawthorn}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Tanatar}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Paglione}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Sutherland}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Hill}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Wang}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{Chen}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{93}},
+  \bibinfo{pages}{056401} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Gavilano et~al.}(2004)\citenamefont{Gavilano, Rau,
+  Pedrini, Hinderer, Ott, Kazakov, and Karpinski}}]{GavilanoPRB04}
+\bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Gavilano}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Rau}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Pedrini}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Hinderer}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Ott}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Kazakov}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Karpinski}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{69}},
+  \bibinfo{pages}{100404(R)} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Bernhard et~al.}(2004)\citenamefont{Bernhard, Boris,
+  Kovaleva, Khaliullin, Pimenov, Yu, Chen, Lin, and Keimer}}]{BernhardPRL04}
+\bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Bernhard}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Boris}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Kovaleva}},
+  \bibinfo{author}{\bibfnamefont{G.}~\bibnamefont{Khaliullin}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Pimenov}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Yu}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Chen}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{Lin}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Keimer}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{93}},
+  \bibinfo{pages}{176401} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Ning et~al.}(2004)\citenamefont{Ning, Imai, Statt, and
+  Chou}}]{NingPRL04}
+\bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Ning}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Imai}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Statt}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{F.}~\bibnamefont{Chou}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{93}},
+  \bibinfo{pages}{237201} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Singh}(2000)}]{SinghPRB00}
+\bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Singh}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{61}},
+  \bibinfo{pages}{13397} (\bibinfo{year}{2000}).
+
+\bibitem[{\citenamefont{Valla et~al.}(2002)\citenamefont{Valla, Johnson, Yusof,
+  Wells, Li, Loureiro, Cava, Mikamik, Morik, Yoshimurak
+  et~al.}}]{VallaNature02}
+\bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Valla}},
+  \bibinfo{author}{\bibfnamefont{P.~D.} \bibnamefont{Johnson}},
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{Yusof}},
+  \bibinfo{author}{\bibfnamefont{B.}~\bibnamefont{Wells}},
+  \bibinfo{author}{\bibfnamefont{Q.}~\bibnamefont{Li}},
+  \bibinfo{author}{\bibfnamefont{S.~M.} \bibnamefont{Loureiro}},
+  \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Cava}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Mikamik}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Morik}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Yoshimurak}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Nature}
+  \textbf{\bibinfo{volume}{417}}, \bibinfo{pages}{627} (\bibinfo{year}{2002}).
+
+\bibitem[{\citenamefont{Yang et~al.}(2006{\natexlab{a}})\citenamefont{Yang,
+  S.-C.Wang, Sekharan, Matsui, Souma, Sato, Takahashi, Takeuchi, Campuzano, Jin
+  et~al.}}]{YangPRL04}
+\bibinfo{author}{\bibfnamefont{H.-B.} \bibnamefont{Yang}},
+  \bibinfo{author}{\bibnamefont{S.-C.Wang}},
+  \bibinfo{author}{\bibfnamefont{A.~K.~P.} \bibnamefont{Sekharan}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Matsui}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Souma}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Sato}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Takahashi}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Takeuchi}},
+  \bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{Campuzano}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Jin}}, \bibnamefont{et~al.},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{92}},
+  \bibinfo{pages}{246403} (\bibinfo{year}{2006}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Hasan et~al.}(2004)\citenamefont{Hasan, Chuang, Qian,
+  Li, Kong, Kuprin, Fedorov, Kimmerling, Rotenberg, Rossnagel
+  et~al.}}]{HasanPRL04}
+\bibinfo{author}{\bibfnamefont{M.~Z.} \bibnamefont{Hasan}},
+  \bibinfo{author}{\bibfnamefont{Y.-D.} \bibnamefont{Chuang}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Qian}},
+  \bibinfo{author}{\bibfnamefont{Y.~W.} \bibnamefont{Li}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Kong}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Kuprin}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Fedorov}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Kimmerling}},
+  \bibinfo{author}{\bibfnamefont{E.}~\bibnamefont{Rotenberg}},
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Rossnagel}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{92}}, \bibinfo{pages}{246402}
+  (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Yang et~al.}(2006{\natexlab{b}})\citenamefont{Yang,
+  Pan, Sekharan, Sato, Souma, Takahashi, Jin, Sales, Mandrus, Fedorov
+  et~al.}}]{YangPRL05}
+\bibinfo{author}{\bibfnamefont{H.-B.} \bibnamefont{Yang}},
+  \bibinfo{author}{\bibfnamefont{Z.-H.} \bibnamefont{Pan}},
+  \bibinfo{author}{\bibfnamefont{A.~K.~P.} \bibnamefont{Sekharan}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Sato}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{Souma}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Takahashi}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Jin}},
+  \bibinfo{author}{\bibfnamefont{B.~C.} \bibnamefont{Sales}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Mandrus}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Fedorov}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{95}}, \bibinfo{pages}{146401}
+  (\bibinfo{year}{2006}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Qian et~al.}(2006{\natexlab{a}})\citenamefont{Qian,
+  Wray, Hsieh, Wu, Luo, Wang, Kuprin, Fedorov, Cava, Viciu et~al.}}]{QianPRL06}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Qian}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Wray}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Hsieh}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Wu}},
+  \bibinfo{author}{\bibfnamefont{J.~L.} \bibnamefont{Luo}},
+  \bibinfo{author}{\bibfnamefont{N.~L.} \bibnamefont{Wang}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Kuprin}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Fedorov}},
+  \bibinfo{author}{\bibfnamefont{R.~J.} \bibnamefont{Cava}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Viciu}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{Phys. Rev. Lett.}
+  \textbf{\bibinfo{volume}{96}}, \bibinfo{pages}{046407}
+  (\bibinfo{year}{2006}{\natexlab{a}}).
+
+\bibitem[{\citenamefont{Qian et~al.}(2006{\natexlab{b}})\citenamefont{Qian,
+  Wray, Hsieh, Viciu, Cava, Luo, Wu, Wang, and Hasan1}}]{QianPRL06b}
+\bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Qian}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Wray}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Hsieh}},
+  \bibinfo{author}{\bibfnamefont{L.}~\bibnamefont{Viciu}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Cava}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Luo}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Wu}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Wang}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Hasan1}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{97}},
+  \bibinfo{pages}{186405} (\bibinfo{year}{2006}{\natexlab{b}}).
+
+\bibitem[{\citenamefont{Iliev et~al.}(2004)\citenamefont{Iliev, Litvinchuk,
+  Meng, Sun, Cmaidalka, and Chu}}]{Iljev04}
+\bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{Iliev}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Litvinchuk}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Meng}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{Sun}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Cmaidalka}},
+  \bibnamefont{and} \bibinfo{author}{\bibfnamefont{C.~W.} \bibnamefont{Chu}},
+  \bibinfo{journal}{Physica C} \textbf{\bibinfo{volume}{402}},
+  \bibinfo{pages}{239} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Starnberg et~al.}(1993)\citenamefont{Starnberg, Brauer,
+  and Nilsson}}]{StarnbergPRB93}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Starnberg}},
+  \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Brauer}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{P.}~\bibnamefont{Nilsson}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{48}},
+  \bibinfo{pages}{621} (\bibinfo{year}{1993}).
+
+\bibitem[{\citenamefont{Eschrig and Koepernik}(1999)}]{EschrigPRB99}
+\bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{Eschrig}} \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{K.}~\bibnamefont{Koepernik}},
+  \bibinfo{journal}{Phys. Rev. B} \textbf{\bibinfo{volume}{59}},
+  \bibinfo{pages}{1743} (\bibinfo{year}{1999}).
+
+\bibitem[{\citenamefont{Devereaux et~al.}(2004)\citenamefont{Devereaux, Cuk,
+  Shen, and Nagaosa}}]{DevereauxPRL04}
+\bibinfo{author}{\bibfnamefont{T.~P.} \bibnamefont{Devereaux}},
+  \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{Cuk}},
+  \bibinfo{author}{\bibfnamefont{Z.-X.} \bibnamefont{Shen}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{Nagaosa}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{93}},
+  \bibinfo{pages}{117004} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Johannes et~al.}(2004)\citenamefont{Johannes,
+  Papaconstantopoulos, Singh, and Mehl}}]{JohannesEPL04}
+\bibinfo{author}{\bibfnamefont{M.~D.} \bibnamefont{Johannes}},
+  \bibinfo{author}{\bibfnamefont{D.~A.} \bibnamefont{Papaconstantopoulos}},
+  \bibinfo{author}{\bibfnamefont{D.~J.} \bibnamefont{Singh}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{M.~J.} \bibnamefont{Mehl}},
+  \bibinfo{journal}{Europhys. Lett.} \textbf{\bibinfo{volume}{68}},
+  \bibinfo{pages}{433} (\bibinfo{year}{2004}).
+
+\bibitem[{\citenamefont{Helme et~al.}(2005)\citenamefont{Helme, Boothroyd,
+  Coldea, Prabhakaran, Tennant, Hiess, and Kulda}}]{HelmePRL05}
+\bibinfo{author}{\bibfnamefont{L.~M.} \bibnamefont{Helme}},
+  \bibinfo{author}{\bibfnamefont{A.~T.} \bibnamefont{Boothroyd}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{Coldea}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Prabhakaran}},
+  \bibinfo{author}{\bibfnamefont{D.}~\bibnamefont{Tennant}},
+  \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Hiess}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{Kulda}},
+  \bibinfo{journal}{Phys. Rev. Lett.} \textbf{\bibinfo{volume}{94}},
+  \bibinfo{pages}{157206} (\bibinfo{year}{2005}).
+
+\end{thebibliography}
+
+
+
+\end{document}
+
+% end of file template.tex
+
+
+</div>
