@@ -1,4 +1,6 @@
-# arxi_text_extractor_mnbvc
+# arxiv_text_extractor_mnbvc
+
+修改自: https://github.com/YuqiHUO/arxiv_extractor_mnbvc
 
 本项目从arxiv原始文件中收集两种语料:
 1. 以.tex为对象的纯文本数据集 (本项目的目标)
